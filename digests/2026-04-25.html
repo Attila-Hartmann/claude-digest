@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest — April 25, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">← All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">April 25, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=PplmzlgE0kg" target="_blank">How Anthropic's product team moves faster than anyone else | Cat Wu (Head of Product, Claude Code)</a></h2>
+  <div class="info">Lenny's Podcast &bull; Apr 23, 2026</div>
+  <p>Cat Wu, Head of Product for Claude Code and Cowork at Anthropic, sits down with Lenny Rachitsky to reveal how Anthropic compressed its shipping cadence from months to weeks to days. She explains why effective PMs today must build products before the underlying model is fully capable — shipping in "research preview" by default so teams are ready when the next model closes the gap. Wu discusses how merging engineering and product into a single hybrid role is key to AI-native velocity, and how Claude's distinct personality is a deliberate product decision, not an accident. She closes with the principle that defines Anthropic's culture: "just do things," cutting through the alignment and planning overhead that bogs down larger organizations.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=jeA-KBv0b68" target="_blank">Claude just got another superpower...</a></h2>
+  <div class="info">Matt Wolfe (Future Tools) &bull; Apr 21, 2026</div>
+  <p>Matt Wolfe breaks down Claude Design, Anthropic's new research-preview tool launched April 17, 2026, which generated immediate buzz — and sent Figma's stock down 7% on its first day. Unlike image generators, Claude Design outputs live, interactive HTML, CSS, and React components directly: UI mockups, pitch decks, one-pagers, and marketing visuals, all editable in real time. The video showcases Design System Ingestion, where Claude reads your existing codebase or design files to automatically apply brand colors, typography, and components to every output. Real-world case studies show teams cutting week-long design cycles down to a single conversation, with Claude available to Pro, Max, Team, and Enterprise subscribers on claude.ai.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=VFLieg8JjLA" target="_blank">Claude Code: Build an AI Agent That Finds Vulnerabilities</a></h2>
+  <div class="info">Agentic Labs &bull; Apr 18, 2026</div>
+  <p>This hands-on lab challenge walks viewers through building a security-focused AI agent entirely inside Claude Code — no prior security expertise required. The tutorial aligns with Anthropic's broader Claude Code Security initiative, which was released in limited research preview and uses Claude Opus 4.6 to reason through codebases the way a human security researcher would, tracing how data flows and catching complex vulnerabilities that rule-based scanners miss. Anthropic's own team used this approach to find over 500 vulnerabilities in production open-source codebases, including a 23-year-old remotely exploitable heap buffer overflow in the Linux kernel's NFS driver. The video provides a clear template for anyone wanting to extend Claude Code into an autonomous vulnerability-hunting pipeline with human-review checkpoints.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=Ob5Vu-gD3mo" target="_blank">Claude Managed Agents Just Dropped, And It Kills n8n</a></h2>
+  <div class="info">AI Builders &bull; Apr 11, 2026</div>
+  <p>Anthropic's Claude Managed Agents launched in public beta on April 8, 2026, and this video argues it fundamentally changes the agent-building landscape by eliminating the infrastructure overhead that previously made production deployments a three-to-six month project. You define tasks, tools, and guardrails in plain English; Anthropic handles orchestration, state, retries, and scaling — at just $0.08 per runtime hour plus standard Claude token costs. The video compares Managed Agents head-to-head with n8n, concluding that n8n remains valuable for teams wanting granular node-level control, while Managed Agents is the clear winner for teams that want to go from idea to production in days. A live demo shows a multi-step agent pipeline standing up in minutes with no infrastructure configuration.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=uogzSxOw4LU" target="_blank">The Ultimate Claude Code Guide | MCP, Skills &amp; More</a></h2>
+  <div class="info">Nimbalyst &bull; Apr 11, 2026</div>
+  <p>This comprehensive guide from Nimbalyst demystifies the full Claude Code extension stack — MCP servers, Skills, Sub-Agents, and Hooks — explaining exactly when and why to reach for each one. MCP servers give Claude access to external APIs and data sources; Skills are reusable slash-command instructions stored in your project; Sub-Agents let Claude spawn focused parallel workers for complex multi-step tasks; and Hooks fire shell commands automatically in response to Claude's actions. The video also demonstrates using Nimbalyst's free visual workspace to design and test agentic workflows without touching the terminal, making advanced Claude Code patterns accessible to developers at any experience level.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
