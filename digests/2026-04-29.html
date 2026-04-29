@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest — April 29, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">← All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">April 29, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=SMyczlbbtZA" target="_blank">How to Use Claude Code in Unity - Beginner Tutorial</a></h2>
+  <div class="info">YouTube Creator &bull; April 26, 2026</div>
+  <p>This beginner tutorial shows how to set up Claude Code inside Unity via the Unity MCP bridge, which allows Claude to directly manage assets, control scenes, and write C# scripts in the Unity Editor. The creator demonstrates the full workflow from installing the package through Unity's package manager to enabling preview packages and configuring the AI connection. The highlight is building a working FPS shooter prototype using just two natural language prompts, showcasing how Claude Code understands Unity's game architecture and C# patterns without manual scripting. Viewers learn how AI-assisted game development can dramatically reduce iteration time for both beginners and experienced Unity developers.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=jeA-KBv0b68" target="_blank">Claude just got another superpower...</a></h2>
+  <div class="info">YouTube Creator &bull; April 22, 2026</div>
+  <p>This video covers Claude Code's new native integration with Google Cloud's Vertex AI, described as one of Anthropic's most impactful infrastructure moves. The key insight is that Claude Code now picks up existing <code>gcloud</code> authentication automatically, meaning developers already on GCP can access full Claude capabilities — Opus, Sonnet, and Haiku models — billed entirely through their Google Cloud account with no separate Anthropic subscription required. The video also touches on Claude Design, Anthropic's new web-based tool for generating branded video content through natural language, and explains how desktop control via Cloud Run lets Claude click, fill forms, and navigate web apps at scale. Together, these features position Claude as an end-to-end platform running on enterprise-grade Google infrastructure.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=uogzSxOw4LU" target="_blank">The Ultimate Claude Code Guide | MCP, Skills &amp; More</a></h2>
+  <div class="info">YouTube Creator &bull; April 15, 2026</div>
+  <p>A thorough walkthrough of Claude Code's full extensibility stack, designed to help developers understand when to reach for each tool. The video explains that CLAUDE.md adds persistent project context Claude sees every session, Skills package reusable instructions into invocable slash commands, MCP servers connect Claude to external APIs and data sources, and subagents handle isolated parallel tasks in their own context windows. Hooks are also covered — event-driven scripts that run deterministic code at lifecycle points (before a tool call, after a commit, etc.) without relying on model judgment. The creator frames these layers as composable: a Routine can trigger a subagent that uses an MCP server and fires a hook on completion, turning Claude Code into a fully automated background worker.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=Ob5Vu-gD3mo" target="_blank">Claude Managed Agents Just Dropped, And It Kills n8n</a></h2>
+  <div class="info">Thinking About A.I. &bull; April 8, 2026</div>
+  <p>This video from Thinking About A.I. examines Anthropic's new Managed Agents (Routines) feature and directly compares it against n8n's established automation workflows. Routines let you define a scheduled AI agent task — daily email summaries, blog generation, data reports — and have Claude run it on Anthropic's infrastructure without an open terminal or persistent connection. The creator highlights where Routines wins: tasks requiring real judgment that n8n's rigid node graph cannot handle. However, the video also gives an honest assessment of the current gaps, noting that Routines lacks n8n's large library of pre-built, maintained connectors and event-driven triggers. The overall verdict is that Routines is a credible automation platform for AI-native workflows, but n8n retains the edge for complex multi-service integrations.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=sJVxwwaF0sU" target="_blank">Every New Claude Code Feature Explained! (2026)</a></h2>
+  <div class="info">YouTube Creator &bull; March 29, 2026</div>
+  <p>A comprehensive live demo of every major Claude Code feature that shipped in Q1 2026, all demonstrated on the creator's own system. The video covers Auto Mode — a background safety classifier that lets routine actions run without permission prompts while automatically blocking risky ones — along with hooks for lifecycle automation, subagents for isolated parallel task delegation, and skills for packaging reusable instructions as slash commands. Remote Control and Dispatch are also shown, enabling programmatic triggering of Claude Code sessions via API so jobs can be queued and picked up asynchronously. Computer Use rounds out the feature tour, allowing Claude to take screenshots, click buttons, fill forms, and navigate web applications visually — turning Claude Code into a fully autonomous browser-capable agent.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
