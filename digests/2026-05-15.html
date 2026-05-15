@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest — May 15, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">← All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">May 15, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=lu-aRvn8dhY" target="_blank">Claude 5 Release May 2026</a></h2>
+  <div class="info">AI News &bull; May 13, 2026</div>
+  <p>This video breaks down the state of Claude's model roadmap as of mid-May 2026, spotlighting Anthropic's release of Claude Opus 4.7 and the rumours around an even more powerful internal model Anthropic chose not to ship publicly. The creator examines what the Opus 4.7 release means for the Claude 5 timeline, why Anthropic's cautious release strategy differs from competitors, and what developers should expect from the next generation of Claude models in Q2–Q3 2026. Key context includes the new <code>xhigh</code> effort level and Opus 4.7 becoming the default on Max and Team Premium plans.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=-jINRoST0mk" target="_blank">Claude Code Agent View IS INSANE! Huge New Update Introduces /goal, sessions, &amp; More!</a></h2>
+  <div class="info">AI Developer Community &bull; May 12, 2026</div>
+  <p>A hands-on walkthrough of the brand-new Agent View feature that shipped with Claude Code v2.1.139 on May 11, 2026. The video demonstrates how <code>claude agents</code> opens a full-terminal dashboard listing every background session, colour-coded by state (working, needs input, completed). The creator deep-dives into the <code>/goal</code> command, which lets Claude pursue an outcome autonomously without asking for permission at every step, and background sessions that keep running even after the terminal is closed — managed by a supervisor process. Practical tips cover dispatching parallel bug-fix, review, and test sessions and checking in via the peek panel.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=-INveHwbRz4" target="_blank">Introducing Agent View in Claude Code</a></h2>
+  <div class="info">Claude (Official Anthropic Channel) &bull; May 11, 2026</div>
+  <p>The official Anthropic product demo for Agent View, Claude Code's new centralized session manager. The video shows how developers can dispatch multiple independent tasks — a bug fix, a pull request review, a flaky-test investigation — as separate rows, keep working elsewhere, and return only when a row signals it needs input or has finished. Key features highlighted include the peek panel (press <code>Space</code> to see the latest output or question without attaching), <code>←</code> to background any active session into agent view, and git-worktree isolation so parallel sessions don't overwrite each other's edits. Agent View is in research preview and requires Claude Code v2.1.139 or later.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=GMIWm5y90xA" target="_blank">Code with Claude 2026: Opening Keynote</a></h2>
+  <div class="info">Claude (Official Anthropic Channel) &bull; May 6, 2026</div>
+  <p>The full opening keynote from Anthropic's inaugural developer conference, held in San Francisco on May 6, 2026. The keynote unveiled three major additions to Claude Managed Agents: <strong>Dreaming</strong> (a scheduled background process that reviews past agent sessions, surfaces patterns, and improves future runs — Harvey's task completion rates rose 6× in internal testing), <strong>Multiagent Orchestration</strong> (a lead agent delegates to specialist subagents working in parallel on a shared filesystem), and <strong>Outcomes</strong> (developers define a quality rubric and a grader agent sends Claude back to revise until the bar is met). Additional announcements included doubled rate limits on Claude Code, native Microsoft Office integrations, and plans for the global conference tour reaching London and Tokyo.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=2g8A53SIv3w" target="_blank">Claude Code Conference: What's New in Claude Code</a></h2>
+  <div class="info">Claude (Official Anthropic Channel) &bull; May 6, 2026</div>
+  <p>A focused ~20-minute technical session from Code with Claude 2026 that catalogues recent Claude Code updates for developers. Highlights include plugins loading from <code>.zip</code> archives and URLs (via <code>--plugin-url</code>), <code>worktree.baseRef</code> for controlling whether new worktrees branch from the remote default or local HEAD, auto mode's hard deny rules that block actions unconditionally, and hooks now receiving the active effort level via <code>effort.level</code> and <code>$CLAUDE_EFFORT</code>. The session also previews the upcoming Agent View and explains how <code>/ultrareview</code> sends a fleet of cloud bug-hunting agents to analyse a PR and return findings directly to the CLI or Desktop.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
