@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest — May 22, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">← All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">May 22, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=eSP7PLTXNy8" target="_blank">Build a proactive agent workflow with Claude Code</a></h2>
+  <div class="info">Claude (Official) &bull; N/A views &bull; May 20, 2026</div>
+  <p>This official Anthropic demo shows how to use Claude Code's Routines feature to turn Claude into a proactive teammate — one that reads your repo and opens a pull request before you've even sat down at your desk. The video walks through a complete end-to-end example, covering how to configure scheduled and event-driven triggers so Claude can autonomously monitor a codebase, detect issues, and submit fixes without waiting for a human prompt. It demonstrates the power of Routines as a way to eliminate repetitive morning triage tasks and let developers focus on higher-level decisions. This is a practical showcase of one of Anthropic's flagship proactive workflow features, highlighting how cloud-hosted agents can work asynchronously on your behalf.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=Lj9F4Cts0ks" target="_blank">Claude Code Just Dropped Something Crazy (Agent View Tutorial)</a></h2>
+  <div class="info">Independent Creator &bull; N/A views &bull; May 18, 2026</div>
+  <p>This hands-on tutorial dives into Claude Code's newly released Agent View, a built-in terminal dashboard accessed via <code>claude agents</code> that lets you manage multiple AI coding sessions from one screen. The presenter demonstrates dispatching three parallel sessions — a bug fix, a PR review, and a flaky-test investigation — and shows how each row updates in real time to reflect its state: Working, Needs Input, or Completed. Viewers learn how to use the peek panel to reply to a blocked session without attaching to it fully, and how background sessions keep running even after closing the terminal. The video is a great practical introduction to running parallel autonomous workflows without juggling multiple terminal windows.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=vjSdb3-tpkE" target="_blank">Claude Code Just Got Better | Agent View</a></h2>
+  <div class="info">Independent Creator &bull; N/A views &bull; May 17, 2026</div>
+  <p>This video reviews the Agent View feature shipped in Claude Code v2.1.139, framing it as the upgrade that transforms Claude Code from a single-session assistant into a full orchestration platform. The presenter explains the key UX model: dispatch sessions from the agent view input, keep working in another window, and only step in when a row flags that it needs your input or has opened a pull request. Highlights include the session state icon system (animated for active, yellow for blocked, green for done), the <code>←</code> shortcut to background any session and return to the dashboard, and the PR status dot that tracks open pull requests per session. The video argues that Agent View closes the last major gap between Claude Code and a true background software engineer.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=-jINRoST0mk" target="_blank">Claude Code Agent View IS INSANE! Huge New Update Introduces /goal, sessions, &amp; More!</a></h2>
+  <div class="info">Independent Creator &bull; N/A views &bull; May 15, 2026</div>
+  <p>A comprehensive breakdown of Claude Code's Week 20 release covering three major additions: Agent View for managing parallel background sessions, the new <code>/goal</code> command, and Fast Mode on Opus 4.7. The <code>/goal</code> command is highlighted as a particularly powerful addition — you describe a completion condition (e.g. "all auth tests pass and lint is clean") and Claude iterates autonomously across turns until that condition holds, without you having to re-prompt each step. The presenter also covers how Fast Mode now runs on Opus 4.7 by default for roughly 2.5× faster output, and walks through the Rewind menu's new "Summarize up to here" option for managing long context windows. This is one of the most complete single-video overviews of the May 11–15 release.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=GMIWm5y90xA" target="_blank">Code with Claude 2026: Opening Keynote</a></h2>
+  <div class="info">Anthropic (Official) &bull; N/A views &bull; May 6, 2026</div>
+  <p>The official opening keynote from Anthropic's annual developer conference in San Francisco, announcing the biggest platform expansions in Claude Code's history. Four major capabilities were unveiled: <strong>Dreaming</strong>, a scheduled agent that reviews past sessions and curates memory so agents improve between runs; <strong>Multiagent Orchestration</strong>, where a lead agent delegates to specialist subagents working in parallel on a shared filesystem; <strong>Outcomes</strong>, a rubric-based grading system that sends agents back to revise work until it meets a defined quality bar; and a preview of <strong>Agent View</strong>, the unified session dashboard. The keynote also included live demos of proactive workflows and the Capability Curve — a framework for thinking about how much autonomy to grant an AI agent based on task risk and reversibility.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
