@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest — May 23, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">← All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">May 23, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=efRIrLXoOVA" target="_blank">Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)</a></h2>
+  <div class="info">Independent Creator &bull; N/A views &bull; May 21, 2026</div>
+  <p>This video breaks down Anthropic's freshly published playbook for running Claude Code effectively inside large, production codebases. The presenter walks through seven core strategies: grounding Claude with a CLAUDE.md file at the repo root, using "skeptical memory" to verify current state before acting, active context management that summarises and drops stale history before hitting token limits, LSP integration for go-to-definition and find-all-references at scale, MCP connections to databases and documentation servers, programmatic tool calling to keep scaffolding minimal, and prompt caching to slash latency on repeated context. The key takeaway is that the harness around the model — not the model itself — determines whether a coding agent is reliable at scale.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=6amLO7I9xdg" target="_blank">Code with Claude London 2026: Opening Keynote</a></h2>
+  <div class="info">Claude (Official) &bull; N/A views &bull; May 19, 2026</div>
+  <p>The opening keynote from Anthropic's London developer conference features Angela Jiang (Head of Product, Claude Platform), Boris Cherny (Head of Claude Code), and Cat Wu (Head of Product, Claude Code). The talk frames the current AI moment as collapsing the gap between "I have an idea" and "it runs," and urges developers to architect for the next capability jump rather than today's model limits. Platform highlights include the "advisor strategy" — running a cheaper executor model that consults an Opus-class advisor only when needed, reportedly cutting costs by ~5× at frontier quality — alongside Claude Managed Agents, self-hosted sandboxes, and MCP tunnels for secure internal access. Claude Code updates spotlight multi-session async development with Agent View and desktop split views, plus Routines and CI Autofix as automation primitives that let agents verify, fix, and shepherd PRs without human babysitting.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=T4ieZPIEmd8" target="_blank">Inside How Anthropic Is Building the Next Claude | Alex Albert</a></h2>
+  <div class="info">Creator Economy &bull; N/A views &bull; May 17, 2026</div>
+  <p>Alex Albert, Research PM at Anthropic, gives a rare inside look at how the next Claude model is conceived, trained, and shipped. He explains that capability bets — such as deep coding ability or complex knowledge work — are locked in before pre-training begins, based on a combination of enterprise customer feedback and internal pain points Anthropic employees hit in their own workflows. A key architectural insight is that the same underlying model produces very different behavior depending on how each surface (Claude.ai, Claude Code, CoWork) wraps it in its own prompt and tool configuration. The conversation also touches on Anthropic's ongoing research into Claude's potential consciousness, with full-time researchers exploring what it means for an increasingly autonomous agent to be a conscious actor — a question the company takes seriously without yet taking an official position on.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=IYBP_JT9aUo" target="_blank">Anthropic Just Dropped Their Claude Code Playbook (Here's What Changed)</a></h2>
+  <div class="info">Independent Creator &bull; N/A views &bull; May 16, 2026</div>
+  <p>A concise breakdown of Anthropic's official Claude Code playbook, which lays out five extension points, two core capabilities, and three usage patterns for getting the most out of Claude Code in real projects. The presenter focuses on CLAUDE.md as the essential standing-context file that every team should maintain, and on hooks as a way to automate pre- and post-tool actions without changing the model prompt. The video highlights how the playbook shifts the framing from "prompt Claude better" to "structure your repo and environment so Claude always has the right context" — covering how good CLAUDE.md files, well-scoped tool permissions, and custom slash commands compound into a dramatically more reliable agent experience over time.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=-INveHwbRz4" target="_blank">Introducing agent view in Claude Code</a></h2>
+  <div class="info">Claude (Official) &bull; N/A views &bull; May 11, 2026</div>
+  <p>The official Anthropic demo introducing Agent View, the new unified CLI dashboard shipped in Claude Code v2.1.139 as a research preview. The video shows how <code>claude agents</code> opens a single screen listing every active session with its real-time status — Working, Needs Input, Completed, or Failed — so developers no longer need multiple terminal tabs or tmux panes. Key interactions demonstrated: launching background sessions with <code>claude --bg "task description"</code>, peeking at the latest turn with the spacebar and replying inline, attaching to the full transcript with Enter, and setting a <code>/goal</code> completion condition so Claude iterates autonomously across turns until the goal is met. The feature is available on Pro, Max, Team, Enterprise, and API plans, and pairs with the same week's release of Fast Mode on Opus 4.7 for ~2.5× faster output.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
