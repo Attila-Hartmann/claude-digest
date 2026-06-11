@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest &mdash; June 11, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">&larr; All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">June 11, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=Y9Wz2PV404E" target="_blank">Introducing Claude Fable 5</a></h2>
+  <div class="info">Anthropic &bull; &mdash; views &bull; June 9, 2026</div>
+  <p>Anthropic's official launch video for Claude Fable 5, the first Mythos-class model made publicly available. Fable 5 sets new records on major benchmarks: 80.3% on SWE-Bench Pro (11 points ahead of its nearest competitor), 95.0% on SWE-bench Verified, and #1 on FrontierCode at 29.3% on the Diamond subset. Priced at $10/M input and $50/M output tokens, it is available free for Pro, Max, and Enterprise users through June 22. Built-in safeguards silently route cybersecurity, biology, chemistry, and model-distillation queries to Opus 4.8, keeping Mythos-class power within responsible limits.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=54Fky0JpSbw" target="_blank">Claude Fable 5 IS INCREDIBLE! Greatest AI Model Ever! (Fully Tested)</a></h2>
+  <div class="info">AI Tech Creator &bull; &mdash; views &bull; June 10, 2026</div>
+  <p>A hands-on benchmark video that puts Claude Fable 5 through its paces using a custom "Great Vibe Coding Platform." The creator confirms the headline numbers — 80.3% SWE-Bench Pro, 88.0% Terminal-Bench 2.1 — and goes further by running real agentic multi-step coding workflows. The takeaway is that Fable 5 not only tops leaderboards but also delivers in practical developer settings, handling complex code generation and debugging tasks with noticeably fewer missteps than previous Claude models. The video concludes Fable 5 is the strongest publicly available model for software engineering as of its release date.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=h95BH9GrZak" target="_blank">Anthropic Just Put Claude Code Agents on a Meter</a></h2>
+  <div class="info">AI Tools &amp; Dev Channel &bull; &mdash; views &bull; June 6, 2026</div>
+  <p>This timely video breaks down Anthropic's major billing change taking effect June 15, 2026: Agent SDK usage, <code>claude -p</code>, Claude Code GitHub Actions, and third-party agent frameworks are being moved off subscription limits onto a separate monthly credit pool billed at full API rates. Pro users get $20/month, Max 5x users $100, and Max 20x users $200. Interactive Claude Code in the terminal stays on the existing subscription. The video explains why this matters: the old flat-rate model effectively subsidized heavy automated usage by 15–30×, and once the credit runs out, agent requests halt unless overflow billing is explicitly enabled — a critical detail many developers missed.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=SSPy3cCSLuc" target="_blank">Claude Code&rsquo;s NEW Managed Agents Just Changed EVERYTHING</a></h2>
+  <div class="info">Indie SaaS Developer &bull; &mdash; views &bull; April 20, 2026</div>
+  <p>An in-depth look at Claude Managed Agents from a developer actively shipping a SaaS product (Harbor) on top of them. The creator walks through the full agent lifecycle — defining a model, system prompt, tools, and MCP servers; spinning up a cloud sandbox; starting a session; and streaming results via server-sent events. Key insight: Managed Agents removes the need to build your own agent loop, sandbox, and tool execution layer while adding persistent state and session history out of the box. The video is especially useful for developers deciding whether to use the raw Messages API or step up to the managed harness for production workloads.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=Ob5Vu-gD3mo" target="_blank">Claude Managed Agents Just Dropped, And It Kills n8n</a></h2>
+  <div class="info">AI Automation Channel &bull; &mdash; views &bull; April 8, 2026</div>
+  <p>One of the first major reaction videos to the Claude Managed Agents public beta launch, this video argues that Anthropic's hosted agent infrastructure is a direct competitor to n8n, Zapier, and similar workflow automation tools. Managed Agents handles secure sandboxing, stateful sessions, checkpointing, tool orchestration, and error recovery natively — the exact concerns that push teams toward dedicated orchestration platforms. The creator notes that Notion, Asana, and Rakuten were already running production workloads on Managed Agents at launch, signaling Anthropic's intent to own the end-to-end agent stack rather than just the model layer.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
