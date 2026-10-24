@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Digest — October 24, 2026</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1f2937;background:#fafafa;}
+  h1{color:#c15e2d;font-size:1.8rem;margin-bottom:4px;}
+  .meta{color:#6b7280;font-size:.9rem;margin-bottom:32px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #c15e2d;border-radius:6px;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .card h2{margin:0 0 6px;font-size:1.1rem;}
+  .card h2 a{color:#1a0dab;text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .card .info{color:#6b7280;font-size:.85rem;margin-bottom:12px;}
+  .card p{margin:0;line-height:1.65;color:#374151;}
+  .rank{display:inline-block;background:#c15e2d;color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:12px;margin-bottom:10px;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:.8rem;text-align:center;}
+  .back{display:inline-block;margin-bottom:24px;color:#c15e2d;text-decoration:none;font-size:.9rem;}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back">← All digests</a>
+<h1>Your Daily Claude Digest</h1>
+<p class="meta">October 24, 2026 &mdash; Top 5 videos about Claude AI &amp; Claude Code</p>
+
+<div class="card">
+  <span class="rank">#1</span>
+  <h2><a href="https://www.youtube.com/watch?v=Fb-68zqcSVs" target="_blank">Introducing Claude Duet</a></h2>
+  <div class="info">Claude (Official) &bull; October 22, 2026</div>
+  <p>Anthropic's official launch video introduces Claude Duet, a proactive personal AI agent built on Opus 5.5 that works for you around the clock. Claude Duet sends a concise morning brief each day highlighting urgent items from your connected apps, then checks those apps every few hours and alerts you when something needs attention. The agent can handle tasks like scheduling meetings, building dashboards, and drafting financial forecasts entirely autonomously — but always asks for approval before taking consequential actions like sending a message, making a payment, or deleting a file. It runs in a single ongoing thread using your existing Claude memory, skills, and connectors, with no complex setup required. Currently available as a research preview for Pro and Max subscribers.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#2</span>
+  <h2><a href="https://www.youtube.com/watch?v=ICGS7LlRfpI" target="_blank">What's new in Claude: September recap</a></h2>
+  <div class="info">Claude (Official) &bull; September 2026</div>
+  <p>Anthropic's monthly recap covers a packed September that saw Chat and Cowork merge into a single unified Claude experience. Users can now create documents, slides, and designs directly from any conversation — no mode switching required — with the new Claude Docs and Claude Slides products rolling out to Pro and Max plans. On the model side, Claude Opus 5.5 launched on September 22 (priced at $4/$20 per million tokens) followed by Claude Sonnet 5.5 on September 28, completing the 5.5 family. Developers gained a new plugin submission portal, a Salesforce plugin with 37 pre-built sales skills launched in beta, and Enterprise customers can now access smart usage-analytics reports. Memory also received a privacy update, excluding sensitive topics from storage by default unless explicitly enabled.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#3</span>
+  <h2><a href="https://www.youtube.com/watch?v=GMIWm5y90xA" target="_blank">Code with Claude 2026: Opening Keynote</a></h2>
+  <div class="info">Claude (Official) &bull; May 6, 2026</div>
+  <p>Anthropic's flagship developer conference kicked off in San Francisco with a keynote structured around three layers: models, platform, and Claude Code. CPO Ami Vora opened by arguing that while model capability is growing exponentially, enterprise adoption is still largely linear — and developers are the ones who close that gap. The platform section introduced Claude Managed Agents, covering multi-agent orchestration, "outcomes" (structured success criteria for agent tasks), and "dreaming" (a self-improvement loop where agents review their own transcripts). A live demo followed a fictional company using a growth agent working in Slack, pulling internal data through MCP tunnels and running code in a self-hosted sandbox. The keynote also highlighted Anthropic's Mythos model finding a previously unknown 27-year-old vulnerability in the OpenBSD source tree, and researchers warned the audience to design systems for the next, smarter model rather than optimising for today's limitations.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#4</span>
+  <h2><a href="https://www.youtube.com/watch?v=-1K_ZWDKpU0" target="_blank">Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time</a></h2>
+  <div class="info">Cole Medin &bull; February 2026</div>
+  <p>Popular AI builder Cole Medin demos Claude Code's experimental Agent Teams feature, which lets multiple Claude Code instances collaborate on a single codebase in parallel rather than working sequentially. One session acts as the team lead — it creates the team, spawns teammates, assigns tasks, and synthesises results — while peer agents can claim tasks from a shared queue and message each other directly with discoveries mid-work. Teammates can run in-process or in split panes (via tmux or iTerm2), and the video shows four agents simultaneously performing a multi-faceted code review covering security, performance, and test coverage. The feature is enabled via the <code>CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS</code> environment variable and is marked experimental, making this an early look at what Medin calls a genuinely game-changing approach to large-scale AI-assisted development.</p>
+</div>
+
+<div class="card">
+  <span class="rank">#5</span>
+  <h2><a href="https://www.youtube.com/watch?v=qiDalcMeBFk" target="_blank">How to Use Multi-Agent Workflows in Claude Code: Skills, Subagents &amp; Handoffs (2026)</a></h2>
+  <div class="info">The Code City &bull; 2026</div>
+  <p>A practical tutorial walking through how to build production-ready multi-agent pipelines in Claude Code using three key primitives: Skills (reusable packaged instructions), Subagents (isolated Claude Code instances with their own context window and tool access), and Handoffs (structured mechanisms for passing state between agents). The video explains how an orchestrator agent plans work and routes tasks to specialist agents, using structured JSON outputs as the communication contract between them. It also covers the Claude Code v2.1.154 Dynamic Workflows feature — a research preview that lets Claude generate a JavaScript script to fan out work across up to 16 agents simultaneously, delivering significant throughput gains for large coding tasks. Best practices include writing error fields to state on failure (rather than crashing silently) and designing each skill to be narrowly scoped so the orchestrator can compose them flexibly.</p>
+</div>
+
+<footer>Generated by Claude Digest Agent &bull; <a href="../index.html">Browse all digests</a></footer>
+</body>
+</html>
